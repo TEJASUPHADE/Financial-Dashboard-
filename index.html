@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">Soar Task</div>
+            <nav>
+                <ul>
+                    <!-- <li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li> -->
+                    <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="transactions.html"><i class="fas fa-exchange-alt"></i> Transactions</a></li>
+                    <li><a href="accounts.html"><i class="fas fa-user"></i> Accounts</a></li>
+                    <li><a href="investments.html"><i class="fas fa-chart-line"></i> Investments</a></li>
+                    <li><a href="credit-cards.html"><i class="fas fa-credit-card"></i> Credit Cards</a></li>
+                    <li><a href="loans.html"><i class="fas fa-clipboard-list"></i> Loans</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    
+                    <li><a href="setting.html"><i class="fas fa-sliders-h"></i> Settings</a></li>
+                      
+                      
+                    <li><a href="privi.html"><i class="fas fa-user-shield"></i> My Privileges</a></li>
+                      
+                   
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header class="dashboard-header">
+                <h1>Overview</h1>
+                <input type="text" placeholder="Search for something...">
+                <div class="profile">
+                    <i class="fas fa-cog"></i>
+                    <img src="p.jpg" alt="Profile">
+                </div>
+            </header>
+            <section class="dashboard-content">
+                <!-- <div class="cards-section"> 
+                    <h2>My Cards</h2>
+                    <div class="card">
+                        <div class="card-info">
+                            <p>Balance</p>
+                            <h3>$5,756</h3>
+                            <p>Card Holder: Eddy Cusuma</p>
+                            <p>Valid Thru: 12/22</p>
+                        </div>
+                        <div class="card-number">
+                            <p>3778 **** **** 1234</p>
+                        </div>
+                    </div>
+                    <button class="see-all">See All</button>
+                </div>
+                -->
+                <div class="cards-section">
+                    <h2>My Cards</h2>
+                    <div class="cards-container">
+                        <!-- Card 1 -->
+                        <div class="card card-dark">
+                            <div class="card-details">
+                                <p class="balance-title">Balance</p>
+                                <h3 class="balance-amount">$5,756</h3>
+                                <p class="card-holder">CARD HOLDER</p>
+                                <p class="card-holder-name">Eddy Cusuma</p>
+                                <p class="valid-thru">VALID THRU</p>
+                                <p class="expiry-date">12/22</p>
+                            </div>
+                            <div class="card-number">3778 **** **** 1234</div>
+                            <div class="card-toggle">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                
+                        <!-- Card 2 -->
+                        <div class="card card-light">
+                            <div class="card-details">
+                                <p class="balance-title">Balance</p>
+                                <h3 class="balance-amount">$5,756</h3>
+                                <p class="card-holder">CARD HOLDER</p>
+                                <p class="card-holder-name">Eddy Cusuma</p>
+                                <p class="valid-thru">VALID THRU</p>
+                                <p class="expiry-date">12/22</p>
+                            </div>
+                            <div class="card-number">3778 **** **** 1234</div>
+                            <div class="card-toggle">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-transactions">
+                    <h3>Recent Transactions</h3>
+                    <ul>
+                      <li>
+                        <div class="transaction">
+                          <span class="transaction-name">Deposit from my Card</span>
+                          <span class="transaction-date">28 January 2021</span>
+                          <span class="transaction-amount negative">-$850</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="transaction">
+                          <span class="transaction-name">Deposit Paypal</span>
+                          <span class="transaction-date">25 January 2021</span>
+                          <span class="transaction-amount positive">+$2,500</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="transaction">
+                          <span class="transaction-name">Jemi Wilson</span>
+                          <span class="transaction-date">21 January 2021</span>
+                          <span class="transaction-amount positive">+$5,400</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+            </section>
+            <section class="charts">
+                <div class="chart-container">
+                    <h2>Weekly Activity</h2>
+                    <!-- <canvas id="weeklyChart"></canvas> -->
+                    <canvas id="weeklyChart" width="200" height="100"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Expense Statistics</h2>
+                    <!-- <canvas id="expenseChart"></canvas> -->
+                    <canvas id="expenseChart" width="200" height="50"></canvas>
+                </div>
+                
+                  
+            </section>
+            <div class="quick-transfer-section">
+                <!-- Quick Transfer -->
+                <div class="quick-transfer">
+                    <h2>Quick Transfer</h2>
+                    <div class="users-list">
+                        <div class="user">
+                            <img src="p.jpg" alt="User 1">
+                            <p>Livia Bator</p>
+                            <span>CEO</span>
+                        </div>
+                        <div class="user">
+                            <img src="https://via.placeholder.com/50" alt="User 2">
+                            <p>Randy Press</p>
+                            <span>Director</span>
+                        </div>
+                        <div class="user">
+                            <img src="https://via.placeholder.com/50" alt="User 3">
+                            <p>Workman</p>
+                            <span>Designer</span>
+                        </div>
+                        <div class="arrow">
+                            <button>&#8250;</button>
+                        </div>
+                    </div>
+                    <div class="transfer-action">
+                        <input type="text" placeholder="Write Amount" class="amount-input">
+                        <button class="send-button">Send <span>&#10148;</span></button>
+                    </div>
+                </div>
+        
+                <!-- Balance History -->
+                <div class="balance-history">
+                    <h2>Balance History</h2>
+                    <canvas id="balanceChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="settingstyle.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Soar Task</div>
+            <ul class="menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Investments</a></li>
+                <li><a href="#">Credit Cards</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">My Privileges</a></li>
+                <li class="active"><a href="#">Setting</a></li>
+            </ul>
+        </aside>
+
+        <!-- Settings Content -->
+        <main class="settings-content">
+            <header>
+                <h1>Setting</h1>
+                <div class="header-actions">
+                    <input type="text" placeholder="Search for something">
+                    <img src="p.jpg" alt="User Profile" class="user-profile">
+                </div>
+            </header>
+
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('edit-profile')">Edit Profile</button>
+                <button class="tab" onclick="showTab('preferences')">Preferences</button>
+                <button class="tab" onclick="showTab('security')">Security</button>
+            </div>
+
+            <div class="tab-content active" id="edit-profile">
+                <div class="profile-section">
+                    <div class="profile-pic">
+                        <img src="p.jpg" alt="User">
+                        <span class="edit-icon">✏️</span>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" value="Charlene Reed">
+                        </div>
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" value="Charlene Reed">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="charlenereed@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" value="********">
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" value="1990-01-25">
+                        </div>
+                        <div class="form-group">
+                            <label>Permanent Address</label>
+                            <input type="text" value="San Jose, California, USA">
+                        </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" value="San Jose">
+                        </div>
+                        <div class="form-group">
+                            <label>Postal Code</label>
+                            <input type="text" value="45962">
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" value="USA">
+                        </div>
+                        <button type="submit" class="save-button">Save</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="tab-content" id="preferences">
+                <p>Preferences content goes here...</p>
+            </div>
+
+            <div class="tab-content" id="security">
+                <p>Security settings content goes here...</p>
+            </div>
+        </main>
+    </div>
+    <script src="settingscript.js"></script>
+</body>
+</html>

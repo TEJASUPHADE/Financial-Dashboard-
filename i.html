@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cards Section</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="cards-section">
+        <h2>My Cards</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card card-dark">
+                <div class="card-details">
+                    <p class="balance-title">Balance</p>
+                    <h3 class="balance-amount">$5,756</h3>
+                    <p class="card-holder">CARD HOLDER</p>
+                    <p class="card-holder-name">Eddy Cusuma</p>
+                    <p class="valid-thru">VALID THRU</p>
+                    <p class="expiry-date">12/22</p>
+                </div>
+                <div class="card-number">3778 **** **** 1234</div>
+                <div class="card-toggle">
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-light">
+                <div class="card-details">
+                    <p class="balance-title">Balance</p>
+                    <h3 class="balance-amount">$5,756</h3>
+                    <p class="card-holder">CARD HOLDER</p>
+                    <p class="card-holder-name">Eddy Cusuma</p>
+                    <p class="valid-thru">VALID THRU</p>
+                    <p class="expiry-date">12/22</p>
+                </div>
+                <div class="card-number">3778 **** **** 1234</div>
+                <div class="card-toggle">
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-transfer-section">
+        <!-- Quick Transfer -->
+        <div class="quick-transfer">
+            <h2>Quick Transfer</h2>
+            <div class="users-list">
+                <div class="user">
+                    <img src="https://via.placeholder.com/50" alt="User 1">
+                    <p>Livia Bator</p>
+                    <span>CEO</span>
+                </div>
+                <div class="user">
+                    <img src="https://via.placeholder.com/50" alt="User 2">
+                    <p>Randy Press</p>
+                    <span>Director</span>
+                </div>
+                <div class="user">
+                    <img src="https://via.placeholder.com/50" alt="User 3">
+                    <p>Workman</p>
+                    <span>Designer</span>
+                </div>
+                <div class="arrow">
+                    <button>&#8250;</button>
+                </div>
+            </div>
+            <div class="transfer-action">
+                <input type="text" placeholder="Write Amount" class="amount-input">
+                <button class="send-button">Send <span>&#10148;</span></button>
+            </div>
+        </div>
+
+        <!-- Balance History -->
+        <div class="balance-history">
+            <h2>Balance History</h2>
+            <canvas id="balanceChart"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
